@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Roboto"; // Setting the app font to Roboto
+  background-color: #eeeeee;
+}
+
+// panel with white background and shadow
+.content-panel {
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 12px 14px;
+  min-height: 163px;
+  box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.31);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.31);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(194, 194, 194, 0.31);
+}

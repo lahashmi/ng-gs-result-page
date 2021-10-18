@@ -1,0 +1,94 @@
+<!-- UI for result entity -->
+<div class="content-panel mb-3">
+  <div class="d-flex">
+    <!-- Image box -->
+    <div class="pt-1">
+      <img [src]="data.imageUrl" />
+    </div>
+
+    <div class="px-3">
+      <div class="row">
+        <div class="col-10">
+          <div class="title">{{ data.title }}</div>
+          <div class="sub-title">{{ data.subTitle }}</div>
+          <div class="description">
+            {{ data.description }}
+          </div>
+        </div>
+        <!-- Result Actions -->
+        <div class="col-2">
+          <div class="d-flex justify-content-end">
+            <div class="mr-4">
+              <img src="../../../assets/images/icons/bookmark.svg" />
+            </div>
+            <div>
+              <img src="../../../assets/images/icons/more.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Result Details -->
+      <div class="row mt-3">
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-2">
+              <img src="../../../assets/images/icons/deadline.svg" alt="" />
+            </div>
+            <div>
+              <div class="detail-value">{{ data.deadline }}</div>
+
+              <div class="detail-title">Deadline</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-2">
+              <img src="../../../assets/images/icons/validity.svg" alt="" />
+            </div>
+            <div>
+              <div class="detail-value">{{ data.validity }}</div>
+              <div class="detail-title">Validity</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-2">
+              <img src="../../../assets/images/icons/amount.svg" alt="" />
+            </div>
+            <div>
+              <div class="detail-value">USD {{ data.amount }} per year</div>
+              <div class="detail-title">Amount</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 mb-3">
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-2">
+              <img src="../../../assets/images/icons/study-level.svg" alt="" />
+            </div>
+            <div>
+              <div class="detail-value">{{ data.studyLevel }}</div>
+              <div class="detail-title">Study Level</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="mr-2">
+              <img src="../../../assets/images/icons/calendar.svg" alt="" />
+            </div>
+            <div>
+              <div class="detail-value">{{ data.intake }}</div>
+              <div class="detail-title">Intake(s)</div>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+</div>

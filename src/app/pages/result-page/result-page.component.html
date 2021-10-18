@@ -1,0 +1,21 @@
+<!-- Result filters component -->
+<app-result-filters></app-result-filters>
+
+<div class="container mt-5">
+  <p class="result-text">We found 304 results</p>
+
+  <div class="row mb-5">
+    <div class="col-8">
+      <!-- Result list -->
+      <app-result-item
+        *ngFor="let result of results"
+        [data]="result"
+      ></app-result-item>
+      <!-- Result Pagination -->
+      <app-pagination></app-pagination>
+    </div>
+    <div class="col-4">
+      <div class="content-panel"></div>
+    </div>
+  </div>
+</div>

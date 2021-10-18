@@ -1,3 +1,9 @@
+
+## Code Output
+
+![alt text](https://nimbus-screenshots.s3.amazonaws.com/s/80faae7dabde9d000987ee4b1411b24b.png)
+
+
 ## Development server
 
 Run `npm install` then  
